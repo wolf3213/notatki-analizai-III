@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.2in]{geometry}
+\usepackage{mdframed}
+\usepackage{subfiles}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{polski}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{0.8\columnwidth}
+    \IfFileExists{img/#1.pdf_tex}{
+        \import{"img/"}{#1.pdf_tex}
+    }
+    {
+        \import{"../img/"}{#1.pdf_tex}
+    }
+}
+
+\newmdtheoremenv{cw}{Ćwiczenie}
+\newtheorem{uwaga}{Uwaga}
+
+\title{Ćwiczenia z Analizy III}
+\author{Jakub Korsak}
+\begin{document}
+\maketitle
+
+\pagebreak
+\section{Ćwiczenia (02.10.2019)}
+\subfile{tex/c1.tex}
+
+\end{document}

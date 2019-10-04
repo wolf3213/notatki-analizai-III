@@ -1,0 +1,139 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{
+    {"../img/"}
+    {"img/"}
+}
+
+\begin{document}
+\begin{cw}
+    Mając dane 1-formy $\omega_1, \omega_2$
+    \[
+        \omega_1 = 2x^2dx + (x+y)dy,\quad \omega_2 = -xdx + (x-2y)dy
+    ,\]
+oblicz $\omega_1 \land \omega_2$, pochodne zewnętrzne $d\omega_i$ i sprawdź, czy $dd\omega_i = 0$.
+\end{cw}
+\begin{align*}
+    \omega_1 \land \omega_2 &= 2x^2(x-2y)dx\land dy - x(x+y)dy\land dx = \\
+    &= \left( 2x^2(x-2y) + x(x+y) \right) dx\land dy =\\
+    &= \left( 2x^3 - 4x^2y + x^2 + xy\right) dx\land dy
+.\end{align*}
+
+\begin{align*}
+    d\omega_1 &= d\left( 2x^2dx + (x+y)dy \right) =\\
+    &= d(2x^2dx) + d\left( (x+y)dy\right) =\\
+    &= 4xdx\land dx + dx\land dy + dy\land dy = dx\land dy
+.\end{align*}
+Ogólnie mamy
+\begin{align*}
+    d\left(f(x,y)dx + g(x,y)dy\right) = \frac{\partial f}{\partial y} dy\land dx + \frac{\partial g}{\partial x} dx\land dy
+.\end{align*}
+
+\begin{align*}
+    d\omega_2 &= d(-xdx) + d\left( (x-2y) dy \right) = - dx\land dx +\\
+    &+ dx\land dy - 2dy\land dy = dx\land dy
+.\end{align*}
+\begin{align*}
+    d\left(dx\land dy\right) = 0
+.\end{align*}
+
+\begin{cw}
+    Jeszcze przykład iloczynu zewnętrznego
+\end{cw}
+\begin{align*}
+    \omega_1 &= \left( x^2 + y + 2z^3 \right) dx\land dy + xyz dy\land dz\\
+    \omega_2 &= x^2ydx + z^2xdy + xdz\\
+    \omega_1 \land \omega_2 &= \left( x^2 + y + 2z^3\right)xdx\land dy\land dz +\\
+    &+ x^3y^2zdy\land ddz\land dx =\\
+    &= \left( x^3 + xy + 2z^3x + x^3y^2z \right) dx\land dy\land dz
+.\end{align*}
+\begin{align*}
+    d\omega_1 &= 6zdz\land dx \land dy + yzdx\land dy\land dz =\\
+    &= \left( 6z+yz \right) dx\land dy\land dz
+.\end{align*}
+\begin{align*}
+    d\omega_2 &= -x^2 dx\land dy - z^2 dy\land dx - 2zxdy\land dz - dz\land dx =\\
+    &= (z^2-x^2)dx\land dy - 2zxdy\land dz + dx\land dz
+.\end{align*}
+\begin{align*}
+    dd\omega_2 &= 2zdz\land dx\land dy - 2zdx\land dy\land dz = 0
+.\end{align*}
+\begin{cw}
+    Niech $f = x^2 + y^2 - 3z^4$. Znaleźć gradient $f$ we współrzędnych kartezjańskich i walcowych, korzystająć z odpowiedniości 0-form.
+\end{cw}
+\[
+    \nabla f = (df)^\flat,\quad g_{ij} = \begin{bmatrix} 1&&\\&1&\\&&1 \end{bmatrix}
+.\]
+\begin{align*}
+    df &= 2xdx + 2ydy - 12z^3dz\\
+    \nabla f &= 2x \frac{\partial }{\partial x} + 2y \frac{\partial }{\partial y} - 12z^3 \frac{\partial }{\partial z}
+.\end{align*}
+\begin{align*}
+    g_{ij} &= \begin{bmatrix} 1&&\\&\rho^2&\\&&1 \end{bmatrix}\quad (\rho, \varphi, z)\\
+        f &= (\rho \cos \varphi)^2 + (\rho \sin \varphi)^2 - 3z^4\\
+        df &= 2\rho d\rho - 12z^3 dz\\
+        g^{ij} &= \begin{bmatrix} 1&&\\&\frac{1}{\rho^2}&\\&&1 \end{bmatrix}\\
+            \left( df \right)^\flat &= g^{\rho\rho} \frac{\partial f}{\partial \rho} \frac{\partial }{\partial \rho} + g^{\varphi\varphi} \frac{\partial f}{\partial \varphi} \frac{\partial }{\partial \varphi} + g^{zz} \frac{\partial f}{\partial z} \frac{\partial }{\partial z} =\\
+            &= 2\rho \frac{\partial }{\partial \rho} - 12z^3 \frac{\partial }{\partial z} \underbrace{\left(+ \frac{1}{\rho^2} \frac{\partial f}{\partial \varphi} \frac{\partial }{\partial \varphi}\right)}_{\text{znika}}
+.\end{align*}
+\begin{cw}
+    Znaleźć rotację pól wektorowych korzystając z odpowiedniości pól wektorowych i form różniczkowych
+\end{cw}
+\[
+    rot(v) = \left( \star \left( d\left( v^\sharp \right)  \right) \right)^\flat
+.\]
+\[
+    A = \left( 2x^2, x+y, 0 \right),\quad B = \left( \rho^2\sin\varphi, \rho\cos\varphi, 3z \right)
+.\]
+\begin{align*}
+    A^\sharp &= 2x^2 dx + (x+y) dy\\
+    d(A^\sharp) &= dx\land dy\\
+    \star(d(A^\sharp)) &= dz\\
+    \left( \star \left( d(A^\sharp) \right)  \right)^\flat &= \frac{\partial }{\partial z}
+.\end{align*}
+\[
+    \nabla \times A = \left( 0,0,1 \right)
+.\]
+W walcowych $g_{ij}$ jest postaci
+\[
+    g_{ij} = \begin{bmatrix} 1&&\\&\rho^2&\\&&1 \end{bmatrix}
+.\]
+\begin{align*}
+    B^\sharp &= \rho^2 \sin\varphi d\rho + \rho^3 \cos \varphi d\varphi + 3zdz\\
+    d(B^\sharp) &= \rho^2\cos\varphi d\varphi \land d\rho + 3\rho^2\cos\varphi d\rho\land d\varphi =\\
+    &= 2\rho^2\cos\varphi d\rho\land d\varphi
+    \star\left(d(B^\sharp)\right) = \frac{\rho}{(3-2)!} 2 \rho^2 \cos\varphi g^{\rho\rho} g^{\varphi\varphi} \epsilon_{123} dz = \\
+    &= 2\rho^3 \cos\varphi \frac{1}{\rho^2}dz = 2\rho\cos\varphi dz\\
+    \left( \star \left( d(B^\sharp) \right) \right)^\flat &= 2\rho\cos\varphi \frac{\partial }{\partial z}
+.\end{align*}
+
+\begin{cw}
+    Znaleźć dywergencję pól
+    \[
+        A = (0,0,x^2-y^2),\quad B = (r^2, \cos\varphi, 3\cos\theta)
+    .\]
+\end{cw}
+\begin{align*}
+    A &= (0,0,x^2-y^2) = (x^2 - y^2) \frac{\partial }{\partial z}\\
+    A^\sharp &= (x^2 - y^2) dz \\
+    \star A^\sharp &= (x^2 - y^2) dx\land dy \\
+    d \star A^\sharp &= 0 dx\land dy\land dz = 0
+.\end{align*}
+\begin{align*}
+    g_{ij} &= \begin{bmatrix} 1&&\\&r^2&\\&&r^2\sin\theta \end{bmatrix}\\
+    B^\sharp &= r^2 dr + r^2 \cos \varphi d\theta + 3 r^2 \cos\theta \sin^2\theta d\varphi\\
+    \star d\theta &= \frac{r^2\sin\theta}{(3-1)!}g^{\theta j_1}\epsilon_{j_1k_1k_2}dx^{k_1}\land dx^{k_2} = \\
+    &= -\sin\theta dr\land d\varphi \\
+    \star dr &= r^2\sin\theta d\theta\land d\varphi\\
+    \star d\varphi &= r^2\sin\theta \frac{1}{r^2\sin^2\theta} dr\land d\theta =\\
+    &= \frac{1}{\sin\theta} dr\land d\theta \\
+    \star B^\sharp &= r^2\cdot r^2\sin\theta d\theta \land d\varphi + \ldots\\
+    d(\star B^\sharp) &= 4r^3\sin\theta dr\land d\theta \land d\varphi\\
+    \star d \star B^\sharp &= \frac{4r^3\sin\theta}{r^2\sin\theta} = 4r
+.\end{align*}
+\begin{cw}
+    Obliczyć (wyprowadzić) gradient, rotację i dywergencję we współrzędnych bisferycznych $(\sigma, \tau, \varphi)$:
+\[
+    g_{ij} = \frac{\sigma^2}{\cosh \tau - \cos \sigma} \begin{bmatrix} 1&&\\&1&\\&&\sin^2\sigma \end{bmatrix}
+.\]
+\end{cw}
+\end{document}
