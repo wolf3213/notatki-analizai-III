@@ -1,11 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.8.28)  7 OCT 2019 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.8.28)  7 OCT 2019 22:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**w2.tex
+(./w2.tex
 LaTeX2e <2018-12-01>
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+(/usr/share/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2018/07/31 Federico Garcia, Gernot Salzer
+Preamble taken from file `../main.tex'
+(../main.tex (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
@@ -620,23 +623,23 @@ Package: transparent 2018/11/18 v1.3 Transparency via pdfTeX's color stack (HO)
 \c@pytanie=\count280
 \c@przyklad=\count281
 \c@uwaga=\count282
- (./main.aux)
-\openout1 = `main.aux'.
+)) (./w2.aux)
+\openout1 = `w2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -715,144 +718,83 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for OML+plm on input line 39.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 9.
 
 (/usr/share/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 39.
-
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 9.
 
 (/usr/share/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 39.
-
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 9.
 
 (/usr/share/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 39.
+(Font)              <10> on input line 9.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 39.
+(Font)              <7> on input line 9.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 39.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+(Font)              <5> on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./tex/w1.tex
-<"img/"fig1-1.png, id=9, 963.6pt x 813.0375pt>
-File: "img/"fig1-1.png Graphic file (type png)
-<use "img/"fig1-1.png>
-Package pdftex.def Info: "img/"fig1-1.png  used on input line 10.
-(pdftex.def)             Requested size: 234.15141pt x 197.56454pt.
-<"img/"fig1-2.png, id=11, 780.66656pt x 546.54187pt>
-File: "img/"fig1-2.png Graphic file (type png)
-<use "img/"fig1-2.png>
-Package pdftex.def Info: "img/"fig1-2.png  used on input line 11.
-(pdftex.def)             Requested size: 234.15141pt x 163.92212pt.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 15.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 15.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 15.
-<"img/"fig1-3.png, id=12, 755.82375pt x 552.56438pt>
-File: "img/"fig1-3.png Graphic file (type png)
-<use "img/"fig1-3.png>
-Package pdftex.def Info: "img/"fig1-3.png  used on input line 21.
-(pdftex.def)             Requested size: 175.61801pt x 128.38557pt.
- [2 <./img/fig1-1.png> <./img/fig1-2.png> <./img/fig1-3.png>]
-<"img/"fig1-4.png, id=25, 545.78906pt x 539.01375pt>
-File: "img/"fig1-4.png Graphic file (type png)
-<use "img/"fig1-4.png>
-Package pdftex.def Info: "img/"fig1-4.png  used on input line 71.
-(pdftex.def)             Requested size: 175.61801pt x 173.43375pt.
- [3 <./img/fig1-4.png>]
-<"img/"fig1-5.png, id=33, 929.72343pt x 802.49812pt>
-File: "img/"fig1-5.png Graphic file (type png)
-<use "img/"fig1-5.png>
-Package pdftex.def Info: "img/"fig1-5.png  used on input line 99.
-(pdftex.def)             Requested size: 175.61801pt x 151.58232pt.
-<"img/"fig1-6.png, id=34, 648.92438pt x 762.59906pt>
-File: "img/"fig1-6.png Graphic file (type png)
-<use "img/"fig1-6.png>
-Package pdftex.def Info: "img/"fig1-6.png  used on input line 105.
-(pdftex.def)             Requested size: 175.61801pt x 206.38158pt.
-<"img/"fig1-7.png, id=35, 843.90282pt x 764.10469pt>
-File: "img/"fig1-7.png Graphic file (type png)
-<use "img/"fig1-7.png>
-Package pdftex.def Info: "img/"fig1-7.png  used on input line 111.
-(pdftex.def)             Requested size: 292.69373pt x 265.01552pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./img/fig1-5.png> <./img/fig1-6.png>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 117.
-Package mdframed Info: Not enough space on this page on input line 126.
-<"img/"fig1-8.png, id=41, 770.12718pt x 320.69812pt>
-File: "img/"fig1-8.png Graphic file (type png)
-<use "img/"fig1-8.png>
-Package pdftex.def Info: "img/"fig1-8.png  used on input line 129.
-(pdftex.def)             Requested size: 175.61801pt x 73.12775pt.
- [5 <./img/fig1-7.png> <./img/fig1-8.png>]
-<"img/"fig1-9.png, id=49, 916.92563pt x 612.03656pt>
-File: "img/"fig1-9.png Graphic file (type png)
-<use "img/"fig1-9.png>
-Package pdftex.def Info: "img/"fig1-9.png  used on input line 165.
-(pdftex.def)             Requested size: 292.69373pt x 195.37007pt.
-) [6 <./img/fig1-9.png>] (./tex/w2.tex
-<"img/"fig2-1.png, id=54, 847.66687pt x 312.41719pt>
-File: "img/"fig2-1.png Graphic file (type png)
-<use "img/"fig2-1.png>
-Package pdftex.def Info: "img/"fig2-1.png  used on input line 24.
+)
+<"../img/"fig2-1.png, id=1, 847.66687pt x 312.41719pt>
+File: "../img/"fig2-1.png Graphic file (type png)
+<use "../img/"fig2-1.png>
+Package pdftex.def Info: "../img/"fig2-1.png  used on input line 24.
 (pdftex.def)             Requested size: 234.15141pt x 86.29874pt.
-<"img/"fig2-2.png, id=55, 579.66562pt x 593.96906pt>
-File: "img/"fig2-2.png Graphic file (type png)
-<use "img/"fig2-2.png>
-Package pdftex.def Info: "img/"fig2-2.png  used on input line 32.
+<"../img/"fig2-2.png, id=3, 579.66562pt x 593.96906pt>
+File: "../img/"fig2-2.png Graphic file (type png)
+<use "../img/"fig2-2.png>
+Package pdftex.def Info: "../img/"fig2-2.png  used on input line 32.
 (pdftex.def)             Requested size: 175.61801pt x 179.95035pt.
-<"img/"fig2-3.png, id=56, 817.55438pt x 61.73062pt>
-File: "img/"fig2-3.png Graphic file (type png)
-<use "img/"fig2-3.png>
-Package pdftex.def Info: "img/"fig2-3.png  used on input line 61.
+<"../img/"fig2-3.png, id=4, 817.55438pt x 61.73062pt>
+File: "../img/"fig2-3.png Graphic file (type png)
+<use "../img/"fig2-3.png>
+Package pdftex.def Info: "../img/"fig2-3.png  used on input line 61.
 (pdftex.def)             Requested size: 292.69373pt x 22.10054pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<"img/"fig2-4.png, id=57, 755.82375pt x 632.3625pt>
-File: "img/"fig2-4.png Graphic file (type png)
-<use "img/"fig2-4.png>
-Package pdftex.def Info: "img/"fig2-4.png  used on input line 72.
+<"../img/"fig2-4.png, id=5, 755.82375pt x 632.3625pt>
+File: "../img/"fig2-4.png Graphic file (type png)
+<use "../img/"fig2-4.png>
+Package pdftex.def Info: "../img/"fig2-4.png  used on input line 72.
 (pdftex.def)             Requested size: 234.15141pt x 195.9049pt.
-[7 <./img/fig2-1.png> <./img/fig2-2.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 76.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../img/fig2-1.png> <../img
+/fig2-2.png>]
+Package mdframed Info: Not enough space on this page on input line 79.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 86.
- [8 <./img/fig2-3.png> <./img/fig2-4.png>]
-<"img/"fig2-6.png, id=70, 664.73344pt x 524.71031pt>
-File: "img/"fig2-6.png Graphic file (type png)
-<use "img/"fig2-6.png>
-Package pdftex.def Info: "img/"fig2-6.png  used on input line 125.
+ [2 <../img/fig2-3.png> <../img/fig2-4.png>]
+<"../img/"fig2-6.png, id=30, 664.73344pt x 524.71031pt>
+File: "../img/"fig2-6.png Graphic file (type png)
+<use "../img/"fig2-6.png>
+Package pdftex.def Info: "../img/"fig2-6.png  used on input line 125.
 (pdftex.def)             Requested size: 234.15141pt x 184.8283pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -863,39 +805,33 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 136.
-) [9 <./img/fig2-6.png>] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [3 <../img/fig2-6.png>] (./w2.aux) ) 
 Here is how much of TeX's memory you used:
- 16067 strings out of 492623
- 287427 string characters out of 6135669
- 351764 words of memory out of 5000000
- 19772 multiletter control sequences out of 15000+600000
- 546075 words of font info for 63 fonts, out of 8000000 for 9000
+ 15989 strings out of 492623
+ 286377 string characters out of 6135669
+ 348951 words of memory out of 5000000
+ 19712 multiletter control sequences out of 15000+600000
+ 540375 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,15n,65p,828b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texmf-dist/fon
-ts/enc/dvips/pl/plit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/u
-sr/share/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texmf-dist/fonts/en
-c/dvips/pl/plsc.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf
--dist/fonts/type1/public/pl/plbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/pl/plbx12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/pl/plmi5.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plmi7.pfb
-></usr/share/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texmf-dist/
-fonts/type1/public/pl/plr12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/pl
-r17.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texmf
--dist/fonts/type1/public/pl/plr7.pfb></usr/share/texmf-dist/fonts/type1/public/
-pl/plsy10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/pl/plti10.pfb></usr/share/texmf-dist/fonts/type
-1/public/pl/plti7.pfb>
-Output written on main.pdf (9 pages, 531417 bytes).
+ 56i,10n,67p,864b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/pl/
+plms.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/texmf-d
+ist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plsc.
+enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/share/texmf-dist/f
+onts/enc/dvips/pl/plmi.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plbx10.pfb></usr
+/share/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texmf-dist/fonts
+/type1/public/pl/plex10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plmi10
+.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plmi7.pfb></usr/share/texmf-d
+ist/fonts/type1/public/pl/plr10.pfb></usr/share/texmf-dist/fonts/type1/public/p
+l/plr5.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/pl/plsy7.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plti10.pfb></usr
+/share/texmf-dist/fonts/type1/public/pl/plti7.pfb>
+Output written on w2.pdf (3 pages, 163154 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
