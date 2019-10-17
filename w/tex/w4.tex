@@ -1,0 +1,156 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{
+    {"../img/"}
+    {"img/"}
+}
+
+\begin{document}
+\subsection{Końcówka dowodu (Stokesa na kostce)}
+\begin{proof}
+
+mamy definicję ścianki:
+\[
+    \partial I = \sum_{j = 1}^n\sum_{\alpha = 0,1}(-1)^{\alpha+j}I_{(j,\alpha)}
+,\]
+dla $I^n\subset\mathbb{R}^n$, $\omega\in \Lambda^{n-1}(M)$, $\omega = f(x^1, \ldots, x^n) = dx^1\land \ldots\land dx^{i-1}\land dx^{i+1}\land \ldots\land dx^n$. Wtedy dla $x = (x^1,\ldots,x^n)$ i $d\tilde x = dx^1\ldots dx^{i-1}dx^{i+1}\ldots dx^n$
+
+\begin{align*}
+    &\int_{I(j,\alpha)}\left<f(x) d\tilde x, \frac{\partial }{\partial x^1}, \ldots, \frac{\partial }{\partial x^{j-1}}, \frac{\partial }{\partial x^{j+1}}, \ldots, \frac{\partial }{\partial x^n} \right> = \\
+    &= \begin{cases}0&j\neq i\\ \int_{I(i,\alpha)}f(x^1,\ldots,x^{i-1},\alpha, x^{i+1}, \ldots x^n)d\tilde x = \int_0^1 dx^1 \ldots \int_0^1 dx^{i-1} \int_0^1 dx^{i+1} \ldots \int_0^1 dx^n f(x^1,\ldots,x^{i-1},\alpha, x^{i+1}, \ldots, x^n) \overset{(\star)}{=}& w p.p. \end{cases}\\
+        &\overset{(\star)}{=} \int_0^1dx^1\ldots\int_0^1dx^n f(x^1,\ldots, x^{i-1},\alpha, x^{i+1}, \ldots, x^n) = \int_{I^n}f(x^1,\ldots,x^{i-1},\alpha, x^{i+1}, \ldots, x^n)
+.\end{align*}
+Przechodzimy do sumy
+\begin{align*}
+    \int_{\partial I}\omega &= \sum_{j=1}^{n} \sum_{\alpha = 0,1} (-1)^{\alpha+j}\int_{I(j,\alpha)}\omega =\\
+    &= \sum_{\alpha = 0,1}(-1)^{\alpha + i}\int_{I^n}f(x^1,\ldots,x^{i-1},\alpha,x^{j+1},\ldots,x^n) =\\
+    &= (-1)^{i+0}\int_{I^n}f(x^1,\ldots,x^{i-1}, 0, x^{i+1},\ldots,x^n) + (-1)^{i+1}\int_{I^n}f(x^1,\ldots,x^{i-1},1,x^{i+1},\ldots,x^n)
+.\end{align*}
+\begin{align*}
+    d\omega &= \frac{\partial f}{\partial x^i} dx^i\land dx^1\land \ldots\land dx^{i-1}\land dx^{i+1}\land \ldots\land dx^n = \\
+    &= (-1)^{i+1} \frac{\partial f}{\partial x^i} dx^1\land \ldots\land dx^{i-1}\land dx^i \land dx^{i+1} \land \ldots \land dx^n
+.\end{align*}
+Stąd
+\begin{align*}
+    &(-1)^{i+1} \int_{I^n}\left< \frac{\partial f}{\partial x^1} dx^1,\ldots,dx^n, \frac{\partial }{\partial x^1} , \ldots, \frac{\partial }{\partial x^n}  \right> = (-1)^{i+1} \int_0^1dx^1\ldots\int_0^1 dx^i\ldots\int_0^1dx^n \frac{\partial f}{\partial x^i} (x) =\\
+    &= (-1)^{i+1} \int_0^1dx^1\ldots\int_0^1dx^{i-1}\int_0^1dx^{i+1}\ldots\int_0^1dx^n\cdot  \\
+    &\cdot \left[ f(x^1,\ldots,x^{i-1},1,x^{i+1},\ldots,x^n) - f(x^1,\ldots,x^{i-1}, 0, x^{i+1}, \ldots, x^n) \right]  \\
+    &= (-1)^{i+1}\int_0^1dx^1\ldots\int_0^1dx^i\ldots\int_0^1dx^n\cdot \\
+    &\cdot \left[ f(x^1,\ldots,x^{i-1},1,x^{i+1},\ldots,x^n) - f(x^1,\ldots,x^{i-1}, 0, x^{i+1}, \ldots, x^n) \right] = \\
+    &= (-1)^{i+1} \int_{I^n}\left[ f(x^1,\ldots,x^{i-1},1,x^{i+1},\ldots,x^n) - f(x^1,\ldots,x^{i-1},0,x^{i+1},\ldots,x^n) \right]
+.\end{align*}
+\[
+LHS = RHS
+.\]
+\end{proof}
+\textbf{Uwaga:} Większą kostkę (w sensie długości krawędzi) możemy zawsze podzielić na sumę zorientowanych wspólnie kostek $I^n$. Całki na tych ścianach kostek, które się stykają dadzą w efekcie zero.
+\begin{przyklad}
+    Niech $[a,b]\in \mathbb{R}^1$ i $f\in \Lambda^0\left( [a,b] \right) $. Wtedy twierdzenie Stokesa wygląda tak (xD):
+    \[
+        \int_{\partial[a,b]} f= \int_{[a,b]} df = \int_a^b \left<\frac{\partial f}{\partial x}dx , \frac{\partial }{\partial x}  \right>dx = \int_a^b \frac{\partial f}{\partial x} dx = f(b) - f(a)
+    .\]
+\end{przyklad}
+\begin{przyklad}
+    Niech $\gamma$ - krzywa na $M$, $\dim M = 3$, $f \in \Lambda^0M$.
+     \[
+         \int_\gamma df= \int_{\partial \gamma} f = f(B) - f(A)
+    .\]
+\end{przyklad}
+\begin{przyklad}
+    $\dim M = 2$, niech $\alpha = xydx + x^2dy$. Policzmy $\int_{\partial S}\alpha$.
+    \[
+    \int_{\partial S}\alpha = \int_{C_1}\alpha + \int_{C_2}\alpha + \int_{C_3}\alpha
+    ,\]
+ale
+    \[
+        \int_{C_1}\left<\varphi^\star\alpha, \frac{\partial }{\partial x}  \right> = 0
+    ,\]
+$\varphi$ - parametryzacja $C_1$. Jeżeli weźmiemy sobie
+\[
+\int_{C_3}\left<\varphi_3^\star\alpha, - \frac{\partial }{\partial y}  \right> = 0
+,\]
+$\varphi_3$ - parametryzacja $C_3$.
+\[
+    C_2 = \left\{ \begin{bmatrix} \cos\theta\\ \sin\theta \end{bmatrix}, 0\le \theta \le \frac{\pi}{2}  \right\}
+,\]
+zatem $\varphi_2^\star\alpha$ przy $x = \cos\theta \implies dx = -\sin\theta d\theta$, $y = \sin\theta \implies dy = \cos\theta d\theta$, mamy
+\[
+    \varphi_2^\star \alpha = \cos\theta \sin\theta(-\sin\theta d\theta) + (\cos^2\theta)\cos\theta d\theta = \cos\theta(\cos^2\theta - \sin^2\theta)d\theta
+.\]
+\[
+    \int_{\partial S}\alpha = \int_0^{\frac{\pi}{2}}d\theta \left<\cos\theta(\cos^2\theta - \sin^2\theta)d\theta, \frac{\partial }{\partial \theta}  \right>
+,\]
+ale np. tw. Stokesa: $\int_{\partial S}\alpha = \int_S d\alpha$.
+\[
+d\alpha = xdy\land dx + 2xdx\land dy = xdx\land dy
+.\]
+\[
+    \int_{\Box}\left<xdx\land dy, \frac{\partial }{\partial x} , \frac{\partial }{\partial y}  \right> = \int_0^1dx\int_0^{\sqrt{1-x^2} } x = \int_0^1dx \cdot x\sqrt{1-x^2} = \left.\frac{2}{3}(1-x^2)^{\frac{3}{2}}\frac{(-1)}{2}\right|_0^1 = \frac{1}{3}
+.\]
+\end{przyklad}
+\begin{przyklad}
+    Niech $\alpha = \frac{-y}{x^2+y^2}dx + \frac{x}{x^2+y^2}dy\in \Lambda^1(M)$, $\partial K = \left\{ \begin{bmatrix} \cos\theta\\ \sin\theta \end{bmatrix} , 0\le \theta, 2\pi \right\} $
+    \[
+        \int_{\partial K}\alpha = \int_0^{2\pi}\left<\varphi^\star\alpha, \frac{\partial }{\partial \theta} \right>d\theta
+    .\]
+\[
+    \varphi^\star \alpha = -\sin\theta(-\sin\theta)d\theta + \cos\theta\cos\theta d\theta = d\theta
+.\]
+Czyli mamy
+\[
+\int_{\partial K}\alpha = \int_0^{2\pi}d\theta = 2\pi
+.\]
+Ale z drugiej strony dla
+    \[
+        d\alpha = \left[ \left( -\frac{1}{x^2+y^2} + \frac{2y\cdot y}{(x^2+y^2)^2} \right) dy\land dx + \left( \frac{1}{x^2+y^2} - \frac{2x^2}{(x^2+y^2)^2} \right) dx\land dy \right] = \left( \frac{2}{x^2 + y^2} - \frac{2}{x^2+y^2} \right) dx\land dy = 0
+    \] wyjdzie, że twierdzenie Stokesa się złamało.
+\end{przyklad}
+Wiemy, że
+\[
+    \int_{\gamma}df = \int_{\partial\gamma}f = f(B) - f(A)
+.\]
+Niech $\alpha = x^2dx + xydy + 2dz$. $\alpha$ jest potencjalna, jeżeli
+\[
+    \underset{\eta\in \Lambda^0M}{\exists} d\eta = \alpha \implies d(d\eta) = 0
+,\]
+(rotacja gradientu równa zero)
+\[
+    \int_{\gamma}\alpha = \int_{\gamma}d\eta = \eta(B) - \eta(A)
+.\]
+\begin{definicja}
+    Niech $M$ - rozmaitość, $\dim M = n$,\\
+    \[
+        i_v : T_pM \times \Lambda^kM\to \Lambda^{k-1}M
+    \]
+    zdefiniowana następująco:
+    \begin{enumerate}
+        \item $i_v f = 0$, jeżeli $f\in \Lambda^0M$
+        \item  $i_v dx^i = v^i$, jeżeli $v = v^1 \frac{\partial }{\partial x^1} + \ldots + v^i \frac{\partial }{\partial x^i} + \ldots + v^n \frac{\partial }{\partial x^n} $
+        \item $i_v(\omega\land \theta) = i_v(\omega)\land \theta + (-1)^{st \omega} \omega\land i_v(\theta)$.
+    \end{enumerate}
+    Operację $i_v$ nazywamy iloczynem zewnętrznym i oznaczamy poprzez
+    \[
+        i_v(\omega) \overset{\text{ozn}}{=} v (odwrocone L) \omega
+    .\]
+\end{definicja}
+\textbf{Obserwacja:} $i_v(i_v\omega) = 0 $ (w domu)
+\begin{przyklad}
+    Niech $v = x \frac{\partial }{\partial x} + y \frac{\partial }{\partial y} + z \frac{\partial }{\partial z} $,
+    \[
+    \omega = dx\land dy + dz \land dx
+    .\]
+\[
+    v (odwrocone L) \omega = \left<dx, v \right> \land dy + (-1)^1 dx\left<dy,v \right> + \left<dz, v \right>\land dx + (-1)^1 dz\land \left<dx, v \right>
+.\]
+\end{przyklad}
+\begin{przyklad}
+    \[
+     F = E^xdx\land dt + E^ydy\land dt + E^z dz\land dt + B^x dy\land dz + B^ydz\land dx + B^zdx\land dy
+    .\]
+\[
+j = e \frac{\partial }{\partial t} + ev^x \frac{\partial }{\partial x}  + ev^y \frac{\partial }{\partial y} + ev^z \frac{\partial }{\partial z}
+.\]
+\[
+    j (odwrocone L) F = ?
+.\]
+\end{przyklad}
+\end{document}
