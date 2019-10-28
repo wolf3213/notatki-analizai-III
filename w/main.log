@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.8.28)  17 OCT 2019 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.8.28)  28 OCT 2019 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -623,20 +623,20 @@ Package: transparent 2018/11/18 v1.3 Transparency via pdfTeX's color stack (HO)
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -715,35 +715,35 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Try loading font information for OML+plm on input line 39.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 41.
 
 (/usr/share/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 41.
 
 
 (/usr/share/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 39.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 41.
 
 
 (/usr/share/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 39.
+(Font)              <12> on input line 41.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 39.
+(Font)              <8> on input line 41.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 39.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+(Font)              <6> on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -925,40 +925,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 134.
-[15]) [16] (./main.aux)
+[15]) [16] (./tex/w5.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 42.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 60.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
- ) 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 77.
+Package mdframed Info: Not enough space on this page on input line 84.
+[17]
+Package mdframed Info: Not enough space on this page on input line 84.
+) [18] (./tex/w6.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 8.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 14.
+ [19]
+Overfull \hbox (16.09659pt too wide) detected at line 103
+[]
+ []
+
+) [20] (./tex/w7.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 38.
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 135--138
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+) [23] (./tex/w8.tex [24]) [25] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16109 strings out of 492623
- 288105 string characters out of 6135669
- 353808 words of memory out of 5000000
- 19802 multiletter control sequences out of 15000+600000
- 546075 words of font info for 63 fonts, out of 8000000 for 9000
+ 16127 strings out of 492623
+ 288252 string characters out of 6135669
+ 355881 words of memory out of 5000000
+ 19806 multiletter control sequences out of 15000+600000
+ 547090 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,16n,65p,828b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texmf-dist/fon
-ts/enc/dvips/pl/plms.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/u
-sr/share/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texmf-dist/fonts/en
-c/dvips/pl/plsc.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/font
-s/type1/public/pl/plbx10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plbx1
-2.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texmf
--dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/pl/plmi5.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plmi7.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texmf-dist/fonts/type
-1/public/pl/plr10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr12.pfb></
-usr/share/texmf-dist/fonts/type1/public/pl/plr17.pfb></usr/share/texmf-dist/fon
-ts/type1/public/pl/plr5.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr7.p
-fb></usr/share/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf-di
-st/fonts/type1/public/pl/plsy7.pfb></usr/share/texmf-dist/fonts/type1/public/pl
-/plti10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plti7.pfb>
-Output written on main.pdf (16 pages, 1161886 bytes).
+{/usr/share/texmf-dist/fonts/enc/
+dvips/pl/plrm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/shar
+e/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texmf-dist/fonts/enc/dvips
+/pl/plit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/share/tex
+mf-dist/fonts/enc/dvips/pl/plme.enc}</usr/share/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msam7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plbx10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/pl/plbx12.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/pl/plbx7.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/
+share/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texmf-dist/fonts/
+type1/public/pl/plmi5.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plmi7.pf
+b></usr/share/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/share/texmf-dist
+/fonts/type1/public/pl/plr10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/p
+lr12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr17.pfb></usr/share/tex
+mf-dist/fonts/type1/public/pl/plr5.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/pl/plr7.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/share/texmf-dist/fonts/type
+1/public/pl/plti10.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plti7.pfb>
+Output written on main.pdf (25 pages, 1220760 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 213 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
