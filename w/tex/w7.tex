@@ -1,0 +1,167 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{
+    {"../img/"}
+    {"img/"}
+}
+
+\begin{document}
+    \begin{definicja}
+        Jeżeli $\alpha\in\Lambda^k(M)$ taka, że $d\alpha = 0$, to mówimy, że $\alpha$ jest domknięta. Jeżeli $\underset{\eta}{\exists} $ taka, że $d\eta = \alpha$, to mówimy, że $\alpha$ jest zupełna.
+    \end{definicja}
+    \begin{przyklad}
+        $\mathbf{E} = -\nabla\varphi$, $\mathbf{B} = rot \mathbf{A}$, $\mathbf{B} = -\nabla f(x,y,z)$.\\
+        Dla $\omega = \frac{ydx - xdy}{x^2+y^2}$, jest $d\omega = 0$. Było, że $\eta = artctg(\frac{x}{y})$, $d\eta = \omega$. Problem leży w punkcie  $(0,0)$ bo nie należy do dziedziny.\\
+        (rys 7-1)
+    \end{przyklad}
+    \subsection{Zastosowania twierdzenia Stokesa (przypomnienie)}
+    \[
+    \int_Md\alpha = \int_{\partial M}\alpha
+    .\]
+Dostaliśmy wektor $\begin{bmatrix} A^1\\A^2\\A^3 \end{bmatrix} $, który jest w koszmarnej bazie $A^1i_1 + A^2i_2 + A^3i_3$, ale można go zamienić na coś fajniejszego $A^1 \frac{1}{\sqrt{g_{11}} }\frac{\partial }{\partial x} + A^2\sqrt{g^{22}} \frac{\partial }{\partial x^2} + A^3 \sqrt{g^{33}}\frac{\partial }{\partial x^3}$.\\
+
+    Dla trójki wektorów $v_1, v_2, v_3$, ich $\left| v_1, v_2, v_3 \right| $ to objętość.\\
+    Paweł wprowadził taki napis
+    \[
+        G(v_1,v_2,v_3) = \begin{bmatrix} \left<v_1|v_1 \right>&\left<v_1|v_2 \right>&\left<v_1|v_3 \right>\\ \left<v_2|v_1 \right>&\left<v_2|v_2 \right>&\left<v_2|v_3 \right>\\ \left<v_3|v_1 \right>&\left<v_3|v_2 \right>&\left<v_3|v_3 \right> \end{bmatrix}
+    .\]
+i zdefiniował objętość tak:
+ \[
+     vol(v_1,v_2,v_3) = \sqrt{G(v_1,v_2,v_3)}
+.\]
+\[
+    A = \mathbf{v}_1 \cdot (\mathbf{v}_2 \times \mathbf{v}_3) = \begin{bmatrix} v_1^1&v_1^2&v_1^3\\ &\ldots&\\ &\ldots &\end{bmatrix}
+.\]
+Teraz
+\[
+    \left( \det A \right)^2 = \left( \det A \right) \left( \det A \right) = \det(A)\det(A^T) = \det(A^TA) = \begin{bmatrix} -&v_1&-\\ -&v_2&-\\ -&v_3&- \end{bmatrix}\begin{bmatrix} &&\\ v^1&v^2&v^3\\ && \end{bmatrix} = G(v_1,v_2,v_3)
+.\]
+\begin{definicja}
+    Niech $M$ - rozmaitość i $\gamma$ krzywa na $M$.
+    \[
+        \gamma = \left\{ \gamma(t)\in M, t\in[a,b] \right\}
+    .\]
+Wówczas
+\[
+\left\Vert \gamma \right\Vert \overset{\text{def}}{=} \int_a^b \left\Vert \frac{\partial }{\partial t}  \right\Vert dt
+,\]
+dla
+\[
+\left\Vert  v \right\Vert = \sqrt{\left<v|v \right>}
+.\]
+\end{definicja}
+\begin{przyklad}
+    (rys 7-2)
+$M$ takie, że $\dim M = 2$
+ \[
+     \gamma = \left\{ \begin{bmatrix} x(t)\\y(t) \end{bmatrix} \in M, t\in[a,b] \right\},\quad g_{ij} = \begin{bmatrix} 1&\\&1 \end{bmatrix}
+.\]
+\[
+    \frac{\partial }{\partial t} = \begin{bmatrix} \dot{x}(t)\\ \dot{y}(t)\end{bmatrix},\quad \left\Vert \frac{\partial }{\partial t}  \right\Vert = \sqrt{\left<\frac{\partial }{\partial t} \Bigg| \frac{\partial }{\partial t}  \right>} = \sqrt{\left( \dot{x}(t) \right) ^2 + \left( \dot{y}(t) \right) ^2}
+.\]
+\[
+    \left\Vert \gamma \right\Vert = \int_a^b \sqrt{\left( x(t) \right) ^2 + \left( y(t) \right) ^2}dt
+.\]
+dla zmiany parametryzacji na (rys 7-3) jest
+\[
+    \gamma = \int_A^B \left\Vert \frac{\partial }{\partial x}  \right\Vert dx = \int_{x_0}^{x_1}\sqrt{1 + \left( f'(x) \right) ^2} dx
+.\]
+\[
+    \gamma = \left\{ \begin{bmatrix} x\\ f(x) \end{bmatrix} \in M, x_0 \le x \le x_1 \right\}
+.\]
+\[
+    \frac{\partial }{\partial x} = \begin{bmatrix} 1\\ f'(x) \end{bmatrix},\quad \left\Vert \frac{\partial }{\partial x}  \right\Vert = \sqrt{\left<\frac{\partial }{\partial x} , \frac{\partial }{\partial x}  \right>}
+.\]
+I zmiana na biegunowe (rys 7-4)
+\[
+    \gamma = \left\{ \begin{bmatrix} r(\varphi)\\ \varphi \end{bmatrix} \in M, \varphi_0\le\varphi\le\varphi_1 \right\}
+.\]
+\[
+    \gamma = \int_A^B \left\Vert \frac{\partial }{\partial \varphi}  \right\Vert d\varphi,\quad g_{ij} = \begin{bmatrix} 1&\\&r^2 \end{bmatrix}
+.\]
+Wektorek styczny jest taki
+\[
+    \frac{\partial }{\partial \varphi}  = \begin{bmatrix} \frac{\partial }{\partial \varphi} r(\varphi)\\ 1 \end{bmatrix},\quad \left<\frac{\partial }{\partial \varphi} | \frac{\partial }{\partial \varphi}  \right> = \left( \begin{bmatrix} 1&\\&r^2 \end{bmatrix} \begin{bmatrix} r(\varphi)\\ 1 \end{bmatrix}  \right) ^T \begin{bmatrix} r'(\varphi) \\ 1 \end{bmatrix}
+.\]
+Ale my wiemy, że $\left<v, w \right> = g_{ij} v^iw^i$, dalej jest
+\[
+    \begin{bmatrix} \frac{\partial r(\varphi)}{\partial \varphi}& r^2 \end{bmatrix} \begin{bmatrix} \frac{\partial r(\varphi)}{\partial \varphi} \\ 1 \end{bmatrix} = r^2 + \left( \frac{\partial r(\varphi)}{\partial \varphi}  \right) ^2
+.\]
+I w związku z tym możemy podać od razu
+\[
+    \left\Vert \gamma \right\Vert = \int_{\varphi_0}^{\varphi_1}\sqrt{r^2 + \left( \frac{\partial r}{\partial \varphi}  \right) ^2} d\varphi
+.\]
+\end{przyklad}
+W powietrzu wisi \textbf{NIEZALEŻNOŚĆ OD WYBORU PARAMETRYZACJI}, ale to po przerwie.\\
+Niech $M = \mathbb{R}^3$,
+\[
+    D = \left\{ \begin{matrix}D^1(t^1, t^2)\\ D^2(t^1, t^2)\\ D^3(t^1, t^2)\end{matrix}\quad a\le t_1 \le b,\quad c \le t_2 \le d\right\}
+.\]
+\[
+    \left\Vert D \right\Vert = \int vol\left( \frac{\partial }{\partial t^1} , \frac{\partial }{\partial t^2}  \right) dt^1dt^2
+.\]
+\begin{przyklad}
+    Niech
+     \[
+         D = \left( \begin{bmatrix} x\\y\\f(x,y) \end{bmatrix},\quad a\le x\le b,\quad c\le y \le d  \right)
+    .\]
+Liczymy $vol(\frac{\partial }{\partial x} , \frac{\partial }{\partial y}) $
+\[
+\frac{\partial }{\partial x} = \begin{bmatrix} 1\\0\\ \frac{\partial f}{\partial x} \end{bmatrix}, \quad \frac{\partial }{\partial y} = \begin{bmatrix} 0\\1\\ \frac{\partial }{\partial y} f \end{bmatrix}
+.\]
+\[
+    vol(\frac{\partial }{\partial x} , \frac{\partial }{\partial y} ) = \sqrt{G\left(\frac{\partial }{\partial x} , \frac{\partial }{\partial y} \right)} = \sqrt{\left\Vert \begin{bmatrix} \left<\frac{\partial }{\partial x} , \frac{\partial }{\partial x}  \right>& \left<\frac{\partial }{\partial x} , \frac{\partial }{\partial y}  \right>\\ \left<\frac{\partial }{\partial y} , \frac{\partial }{\partial x}  \right>& \left<\frac{\partial }{\partial y} , \frac{\partial }{\partial y}  \right> \end{bmatrix}  \right\Vert }
+.\]
+\[
+    G\left( \frac{\partial }{\partial x} , \frac{\partial }{\partial y}  \right) = \left\Vert \begin{bmatrix} 1 + (f_{,x})^2& (f_{,x})(f_{,y})\\ (f_{,x})(f_{,y})& 1 + (f_{,y})^2 \end{bmatrix}  \right\Vert = \left( 1 + (f_{,x})^2 \right) \left( 1 + (f_{,y})^2 \right)  - (f_{,x})^2(f_{,y})^2
+.\]
+\[
+    \left\Vert D \right\Vert = \int_a^b\int_c^d \underbrace{\sqrt{1 + (f_x)^2 + (f_y)^2} dxdy}_{ds}
+.\]
+\end{przyklad}
+Wracamy do napisu
+\[
+\int_Ud\omega = \int_{\partial U}\omega
+.\]
+Niech $A$ - wektor w bazie ortonormalnej. Dla $\dim M = 3$, $g = \begin{bmatrix} g_{11}&&\\&g_{22}&\\&&g_{33} \end{bmatrix} $,
+    \[
+    A = A^1 \sqrt{g^{11}} \frac{\partial }{\partial x^1} + A^2 \sqrt{g^{22}} \frac{\partial }{\partial x^2} + A^3 \sqrt{g^{33}} \frac{\partial }{\partial x^3}
+    .\]
+niech $ \alpha = A^\sharp\in\Lambda^1(M)$, $\gamma$ - krzywa na $M$.
+\[
+\alpha = g_{11}A^1\sqrt{g^{11}} dx^{1} + g_{22}A^{2}\sqrt{g^{22}} dx^{2} + g_{33}A^{3}\sqrt{g^{33}} dx^{3}
+.\]
+\[
+    \int_\gamma \alpha = \int_\gamma A^\sharp = \int_\gamma \left<\varphi^\star\alpha, \frac{\partial }{\partial t}  \right>dt = \int_\gamma \left<\alpha, \varphi_\star \frac{\partial }{\partial t}  \right>dt = \int_\gamma\left<\alpha, \frac{\varphi_\star \frac{\partial }{\partial t} }{\left\Vert \varphi_\star \frac{\partial }{\partial t}  \right\Vert } \right> \left\Vert \varphi_\star \frac{\partial }{\partial t}  \right\Vert dt
+.\]
+Niech $v = v^1 \frac{\partial }{\partial x^1} + v^2 \frac{\partial }{\partial x^2} + v^3 \frac{\partial }{\partial x^3} $.\\
+\textbf{Pytanie:} czym jest $\left<\alpha, v \right>$?\\
+\[
+\left<\alpha, v \right> = A^1\sqrt{g^{11}}g_{11} v^1 + A^2 \sqrt{g^{22}}g_{22} v^2 + A^3\sqrt{g^{33}} g_{33}v^3
+.\]
+czyli mamy
+\[
+    \int_\gamma A^\sharp = \int_\gamma \mathbf{A}\cdot \underbrace{\mathbf{t}_{st} dL}_{d\mathbf{L}}
+.\]
+Znowu wracamy do Stokesa.\\
+Niech $V\subset M$, $\dim M = 3$, $\dim V = 3$. Wtedy tw. Stokesa znaczy
+\[
+    \int_Vd\omega = \int_{\partial V}\omega,\quad \omega \in \Lambda^2(M)
+.\]
+Niech $S\subset M$, $\dim M = 3$, $\dim S = 2$.
+\[
+    \int_Sd\alpha = \int_{\partial S}\alpha,\quad \alpha\in \Lambda^1(M)
+.\]
+\begin{pytanie}
+    Niech $\alpha = A^\sharp$, czym jest $\int_SdA^\sharp$?\\
+    \[
+        dA^\sharp = \underbrace{\left(\left( g_{33}A^3\sqrt{g^{33}}  \right) _{,2} -\left( g_{22}A^2\sqrt{g^{22}}  \right)_{,3}  \right)}_{D_1} dx^2\land dx^3 + \underbrace{\left( \left( g_{11}A^1\sqrt{g^{11}}  \right) _{,3} - \left( g_{33}A^3\sqrt{g^{33}}  \right) _{,1} \right)}_{D_2} dx^3\land dx^1 + \underbrace{\left( \ldots \right)}_{D_3} dx^1\land dx^2
+    .\]
+\[
+\int_S dA^\sharp = \int \left<D^1dx^2\land dx^3, \frac{\partial }{\partial x^2} , \frac{\partial }{\partial x^3}  \right> + \left<D^2dx^3\land dx^1, \frac{\partial }{\partial x^3} , \frac{\partial }{\partial x^1}  \right> + \left<D^3dx^1\land dx^2, \frac{\partial }{\partial x^1} , \frac{\partial }{\partial x^2}  \right>
+.\]
+\[
+    \int\left<D^1dx^2\land dx^3, \frac{\frac{\partial }{\partial x^2} , \frac{\partial }{\partial x^3} }{\left\Vert \frac{\partial }{\partial x^2}, \frac{\partial }{\partial x^3}  \right\Vert } \right> \underbrace{\left\Vert \frac{\partial }{\partial x^2} , \frac{\partial }{\partial x^3}  \right\Vert dx^2dx^3}_{ds} + \ldots
+.\]
+Pamiętamy, czym była $rot(A) = \left( \star dA^\sharp \right) ^\flat = \int\left( rot(A) \right) \mathbf{n}ds$
+\end{pytanie}
+\end{document}

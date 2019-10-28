@@ -1,0 +1,110 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{
+    {"../img/"}
+    {"img/"}
+}
+
+\begin{document}
+    Sprawdzić, że
+    \[
+        j \lrcorner F = "e\cdot E + e(v\times B)"
+    .\]
+\begin{przyklad}
+    Niech $X = \dot{x}(t)\frac{\partial }{\partial x} + \dot{p}(t)\frac{\partial }{\partial p} $, $\omega = dx\land dp \in \Lambda^2(M)$,
+     \[
+         \Lambda^0M \ni H = \frac{p^2}{2m} + \frac{1}{2}kx^2
+    .\]
+Niech $M$ - rozmaitość, $\dim M = 2$. Co oznacza napis
+\[
+x\lrcorner\, \omega = dH?
+\]
+\[
+    \left<dx, x(t)\frac{\partial }{\partial x} + p(t)\frac{\partial }{\partial p} \right>dp - \left<dp, \dot{x}(t)\frac{\partial }{\partial x} + \dot{p}(t)\frac{\partial }{\partial p}  \right>dx = dH
+,\]
+a teraz coś takiego:
+\[
+    x(t)dp - p(t)dx = \frac{p^2}{m}dp + kx^2dx
+.\]
+To wypluje na wyjściu równania ruchu
+\begin{align*}
+    \frac{dx}{dt} &= \frac{p}{m},\quad \dot{p}(t) = -kx\\
+    m \frac{dx}{dt} &= p, \quad \frac{dp}{dt} = -kx
+.\end{align*}
+\end{przyklad}
+\subsection{Rozmaitość z brzegiem}
+\textbf{Obserwacja:}\\
+(rys 5-1)
+Niech $I = [0,1[\subset\mathbb{R}$, (metryka $d(x,y) = |x-y|$) czy $I$ jest otwarty w $\mathbb{R}$? \textit{chyba nie}.\\
+Niech $I = [0,1[\subset[0,2]$, czy $I$ jest otwarty w $[0,2]$? \textit{chyba tak}.
+\[
+    B(0,1) = \left\{ x\in [0,2],\quad d(0,x) < 1 \right\} = [0,1[
+.\]
+\begin{definicja}
+    \[
+        \mathbb{R}^m_+ = \left\{ (x^1,\ldots,x^{m-1},x^m),\quad x^1,\ldots,x^{m-1}\in\mathbb{R},\quad x^m \ge 0 \right\}
+    ,\]
+\[
+    \mathbb{R}^m_0 = \left\{ (x^1,\ldots,x^{m-1}, 0),\quad x^1,\ldots,x^{m-1}\in\mathbb{R} \right\}
+.\]
+    Niech $M$ - rozmaitość, jeżeli atlas rozmaitości $M$ składa się z takich map $\varphi_\alpha$, że \[
+        \varphi_\alpha(\mathcal{O})\subset\mathbb{R}^m_+
+    ,\]
+($\mathcal{O}$ - otwarty w $M$), gdzie $\varphi_\alpha(\mathcal{O})$ - otwarte w $\mathbb{R}^m_+$, to M nazywamy rozmaitością z brzegiem. Jeżeli $p\in M$ i $\varphi_\alpha(p)\in \mathbb{R}^m_0$, to mówimy, że $p$ należy do brzegu $M$.\\
+    (brzeg rozmaitości $M$ oznaczamy przez $\partial M$)
+\end{definicja}
+\begin{pytanie}
+    Co to jest różniczkowalność $\varphi^{-1}$, jeżeli dziedzina $\varphi^{-1}\in \mathbb{R}^m_+$, który nie jest otwarty w $\mathbb{R}^m$?
+\end{pytanie}
+Mówimy wówczas tak:
+
+\begin{definicja}
+    Niech $U\subset \tilde U$, $\tilde U$ - otwarty w $\mathbb{R}^m$, $U$ - otwarty w $\mathbb{R}^m_+$. $\varphi$ jest klasy $\mathcal{C}^r$ na $U$, jeżeli istnieje $\tilde \varphi$ klasy $\mathcal{C}^r$ na $\tilde U$ i $\tilde \varphi|_U = \varphi$.
+\end{definicja}
+(rys 5-3)
+\begin{pytanie}
+    Czym jest $\partial S$, jeżeli $S$ - okrąg?
+\end{pytanie}
+Odp. $\partial S = \{\phi\}$.\\
+Jeszcze takie uzasadnienie: (rys 5-4)
+\[
+    \text{sześcian} \overset{\partial}{\to} \text{boki sześcianu} \overset{\partial}{\to} \text{rogi sześcianu}
+,\]
+\[
+    \text{kula} \overset{\partial}{\to} \text{sfera} \overset{\partial}{\to} \left\{ \phi \right\}
+.\]
+\textbf{Obserwacja:}\\
+Zbiór $\partial M$ wraz z mapami $\varphi_\alpha|_{\partial M}$ i otoczeniami obciętymi do $\mathcal{O}|_{\partial M}$ jest rozmaitością o wymiarze $m-1$, jeżeli $\dim M = m$.\\
+\begin{definicja}
+Niech  $p\in \partial M$, $\left<f_1,\ldots,f_{m-1} \right>$ - baza $ T_p\partial M$, wybierzmy orientację na $M$ (rys 5-5).\\
+Niech $\sigma$ - krzywa na $M$ taka, że
+\[
+    \varphi_\alpha\sigma =  \left( 0,\ldots,0,t \right) \in\mathbb{R}^m_+
+,\]
+niech $\overline{n} = \left[ \sigma \right] $. Mówimy, że orientacja $\partial M$ jest zgodna z orientacją $M$, jeżeli orientacja $\left<\overline{n}, f_1,\ldots,f_{m-1} \right>$ jest zgodna z orientacją $M$.
+\end{definicja}
+(rys 5-6)
+Niech $M$ - rozmaitość, $U\subset M$, $\dim M = n$, $\omega\in \Lambda^kM$,  $\varphi_1: U_1\to T$ - parametryzacja $T$ oraz $\varphi_2: U_2\to T$ - parametryzacja $T$. Z własności funkcji  $\varphi_1$ i $\varphi_2$ wiemy, że
+\[
+\underset{h}{\exists} h: \mathbb{R}^n \supset U_2\to U_1\subset\mathbb{R}^n \implies \varphi_2 = \varphi_1\circ h
+.\]
+Wówczas
+\[
+    \int_{T}\omega = \int_{U_1}\varphi_1^\star \omega = \int_{U_2}h^\star\left( \varphi_1^\star\omega \right) \underset{(\Delta)}{\overset{\text{?}}{=}} \int_{U_2}(\varphi_1\circ h)^\star\omega = \int_{U_2}\varphi_2^\star\omega
+.\]
+    $(\Delta)$ - (rys 5-7)
+    \[
+        \left<(kL)^\star\omega, v \right> = \left<\omega, (kL)_\star v \right> = \left<k^\star \omega, L_\star v \right> = \left<L^\star k^\star \omega, v \right>
+    ,\]
+ale jeżeli $v = \left[ \sigma(t) \right]$, $v = \frac{d}{dt}\overline{\sigma}$ to
+\[
+    (kL)_\star v = \frac{d}{dt}\left( k\left( L\left( \overline{\sigma}(t) \right)  \right)  \right) = k'(L'\cdot \sigma'(t)) = k_\star L_\star v
+.\]
+\textbf{Wniosek:} całka z formy po rozmaitości nie zależy od wyboru parametryzacji
+\subsection{Lemat Poincare}
+Mieliśmy $\omega = \frac{ydx}{x^2+y^2} - \frac{xdy}{x^2+y^2}$, wiemy, że $d\omega = 0$.
+\textbf{Pytanie:} czy istnieje $\eta$ taka, że $\omega = d\eta$? Wówczas wiemy, że $d\omega = d(d\eta) = 0$.\\
+ \textbf{Obserwacja:}
+ \[
+     \eta = arctg \frac{x}{y},\quad d\eta = \frac{1}{1+(\frac{x}{y})^2}\frac{1}{y}dx - \frac{1}{1+(\frac{x}{y})^2}\frac{x}{y^2}dy = \omega
+ \]
+\end{document}

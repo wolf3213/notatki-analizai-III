@@ -1,0 +1,126 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{
+    {"../img/"}
+    {"img/"}
+}
+
+\begin{document}
+    \subsection{W ostatnim odcinku}
+    \[
+        \int_\gamma \alpha = \int_\gamma \vec{A}\cdot \underbrace{\vec{t}_{st}dL}_{\vec{dL}}
+    .\]
+\[
+    dA^\sharp = \left( \overbrace{\left( . \right) , - \left( . \right)}^{D_1}  \right)dx^2\land dx^3 + \ldots
+.\]
+\[
+    \int_S dA^\sharp = \int D^1\left<dx^2\land dx^3, \frac{\partial }{\partial x^2} , \frac{\partial }{\partial x^3}  \right>dx^2dx^3 + \int D^2 dx^{3} dx^{1} + \int D^3 dx^{1} dx^{2}
+.\]
+
+Przypomnijmy sobie czym jest rotacja wektora (takiego fizycznego)
+\[
+    rot(\vec{A}) = \left( \star\left( d\vec{A}^\sharp \right)  \right) ^\flat
+,\]
+ale
+\begin{align*}
+    \star(dx^{2} \land dx^{3} ) &= g^{22}g^{33}\sqrt{g}dx^{1},\\
+    \star(dx^{3} \land dx^{1} ) &= g^{11}g^{33}\sqrt{g} dx^{2} ,\\
+    \star(dx^{1} \land dx^{2} ) &= g^{11}g^{22}\sqrt{g} dx^{3}
+.\end{align*}
+Więc
+\[
+    \star dA^\sharp = D^1 g^{22}g^{33}\sqrt{g} dx^{1} + D^2 g^{33}g^{11}\sqrt{g} dx^{2} + D^3 g^{11}g^{22}\sqrt{g} dx^{3}
+.\]
+\begin{align*}
+    \left( \star dA^\sharp \right) ^\flat &= D^1 g^{11}g^{22}g^{33}\sqrt{g} \frac{\partial }{\partial x^1} + D^2 g^{22}g^{33}g^{11}\sqrt{g} \frac{\partial }{\partial x^2} + D^3 g^{33}g^{11}g^{22}\sqrt{g} \frac{\partial }{\partial x^3}  =\\
+    &= D^1 \sqrt{g^{22}g^{33}} \sqrt{g^{11}} \frac{\partial }{\partial x^1} + D^2 \sqrt{g^{11}g^{33}} \sqrt{g^{22}} \frac{\partial }{\partial x^2} + D^3 \sqrt{g^{11}g^{22}} \sqrt{g^{33}} \frac{\partial }{\partial x^3}
+.\end{align*}
+Czyli dla $\vec{A}$ - wektor w bazie ortonormalnej jest
+\[
+    rot \vec{A} = \begin{bmatrix} D^1 \frac{1}{\sqrt{g_{22}g_{33}} }\\ D^2 \frac{1}{\sqrt{g_{11}g_{33}}}\\ D^3 \frac{1}{g_{11}g_{22}} \end{bmatrix}
+.\]
+ale $rot(\vec{A})\cdot \vec{n} = D^1 \frac{1}{g_{22}g_{33}}$, ale
+\[
+    \left( rot \vec{A}\cdot \vec{n} \right) \cdot d\vec{s} = D^1 \frac{1}{g_{22}g_{33}}\sqrt{g_{22}g_{33}}dx^{2} dx^{3}
+,\]
+zatem
+\[
+    \int_S dA^\sharp = \int_S (rot \vec{A}) \cdot \vec{n}  ds
+.\]
+Czyli teraz mamy tak
+\[
+    \int_\gamma A^\sharp = \int_\gamma \vec{A}\cdot \vec{t}_{st}dL
+.\]
+\[
+\int_S dA^\sharp = \int_{\partial S}A^\sharp
+.\]
+\[
+    \int_S\left( rot \vec{A} \right) \cdot \vec{n} ds = \int_{\partial S}\vec{A} \cdot \vec{t}_{st}dL
+.\]
+\begin{przyklad}
+    $\dim M = 3$, $V \subset M$, $\dim V = 3$
+     \[
+    \int_{\partial V}\star A^\sharp = \int_V d\star A^\sharp
+    .\]
+\end{przyklad}
+\begin{pytanie}
+czym jest $\int_{\partial V}\star A^\sharp$?
+\end{pytanie}
+\[
+    \star(dx^{1})\sqrt{g}g^{11}  dx^{2}\land dx^{3}
+,\]
+\[
+    \star(dx^{2})\sqrt{g}g^{22}  dx^{3}\land dx^{1}
+,\]
+\[
+    \star(dx^{3})\sqrt{g}g^{33}  dx^{1}\land dx^{2}
+,\]
+\textbf{Odpowiedź:}
+\[
+\star A^\sharp = A^1g_{11}\sqrt{g^{11}} \sqrt{g} g^{11}dx^{2} \land dx^{3} + A^2 g_{22}\sqrt{g^{22}} \sqrt{g} g^{22} dx^{3} \land dx^{1} + A^3 g_{33}\sqrt{g^{33}} \sqrt{g} g^{33}dx^{1} \land dx^{2}
+,\]
+następuje cudowne skrócenie i jest
+\[
+A^1 \sqrt{g_{22}g_{33}}\quad dx^{2} \land dx^{3}  + A^2 \sqrt{g_{11}g_{33}} \quad dx^{3} \land dx^{1} + A^3 \sqrt{g_{11}g_{22}} \quad dx^{1} \land dx^{2}
+.\]
+Całka z tego interesu:
+\[
+\int_{\partial V}\star A^\sharp = \int A^1 \sqrt{g_{22}g_{33}}\quad dx^{2} dx^{3} + \int A^2 \sqrt{g_{11}g_{33}}\quad dx^{3} dx^{1} + \int A^3 \sqrt{g_{11}g_{22}} \quad dx^{1}  dx^{2}
+,\]
+ale
+\[
+    \vec{A}\cdot \vec{n}\cdot ds = A^1 \sqrt{g_{22}g_{33}}\quad dx^{2} dx^{3}
+.\]
+Czyli ostatecznie
+\[
+    \int_{\partial V}\star A^\sharp = \int_{\partial V}\vec{A}\cdot \vec{n}ds
+.\]
+\begin{pytanie}
+Jak wygląda $\int_Vd\star A^\sharp$?
+\end{pytanie}
+\[
+    \int_{V}d\star A^\sharp = \int_{V} \left< \left( A^1\sqrt{g_{22}g_{33}} \right)_{,1} + \left( A^2\sqrt{g_{11}g_{33}}  \right) _{,2} + \left( A^3\sqrt{g_{11}g_{22}}  \right) _{,3}, dx^{1} \land dx^{2} \land dx^{3} , \frac{\partial }{\partial x^1} , \frac{\partial }{\partial x^2} , \frac{\partial }{\partial x^3} \right> dx^{1} dx^{2} dx^{3}
+.\]
+Dywergencja to było coś takiego:
+\[
+    div \vec{A} = \star d\left( \star A^\sharp \right)
+,\]
+wiemy, że
+\[
+    \star\left( dx^{1} \land dx^{2} \land dx^{3}  \right) = \sqrt{g} g^{11}g^{22}g^{33} = \sqrt{g^{11}g^{22}g^{33}}
+,\]
+więc
+\[
+    div \vec{A} \sqrt{g_{11}g_{22}g_{33}}\quad dx^{1} dx^{2} dx^{3}= div\vec{A}\quad dV
+.\]
+Zatem ze zdania
+\[
+\int_{\partial V}\star A^\sharp = \int_V d\star A^\sharp
+\]
+wiemy, że
+\[
+    \int_{\partial V}\vec{A}\cdot \vec{n} ds = \int_V div \vec{A} \quad dV
+.\]
+
+
+
+\end{document}
